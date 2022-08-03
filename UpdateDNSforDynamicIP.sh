@@ -5,6 +5,12 @@ EMAIL='your-email-address-on-cloud-flare'
 DOMAIN='example.com'
 ACCOUNT_ID='account-id-on-cloudflare' #https://developers.cloudflare.com/fundamentals/get-started/basic-tasks/find-account-and-zone-ids/
 
+# BEARER_TOKEN variable should be configured as environment variable in ~/.bashrc or /etc/profile.d/bearer.sh
+# example for .bashrc:$ 
+# echo "export BEARER_TOKEN='yourtokenhere' >> ~/.bashrc && . ~/.bashrc
+# example for /etc/profile.d:#
+# echo "export BEARER_TOKEN='yourtokenhere' > /etc/profile.d/cf_bearer_token && . /etc/profile.d/cf_bearer_token
+
 URI='https://api.cloudflare.com/client/v4/zones'
 CTYPE='Content-Type:application/json'
 
